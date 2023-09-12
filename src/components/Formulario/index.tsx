@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
-import { useAdicionarParticipante } from '../state/hooks/useAdicionarParticipante'
-import { useMensagemDeErro } from '../state/hooks/useMensagemDeErro'
+import { useAdicionarParticipante } from '../../state/hooks/useAdicionarParticipante'
+import { useMensagemDeErro } from '../../state/hooks/useMensagemDeErro'
 
 const Formulario = () => {
 
@@ -27,7 +27,7 @@ const Formulario = () => {
         placeholder='Insira os nomes dos participantes'
       />
       <button disabled={!nome}>
-        Adicionar
+        Adicionar/
       </button>
 
       {mensagemDeErro && <p role='alert'>{mensagemDeErro}</p>}
