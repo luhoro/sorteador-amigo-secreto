@@ -1,0 +1,15 @@
+
+
+.lista li {
+  margin: .5rem auto;
+  padding: .5rem .8rem;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #a3a3a3;
+  border-radius: .4rem;
+}
+
+.lista li p {
+  color: #FE652B;
+  font-weight: bold;
+}

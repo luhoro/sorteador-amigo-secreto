@@ -1,13 +1,14 @@
 import { useListaParticipantes } from '../../state/hooks/useListaParticipantes'
+import './estilos.css'
 
 const ListaParticipantes = () => {
   const participantes: string[] = useListaParticipantes()
 
   return (
-    <ul>
+    <ul className='lista'>
       {participantes.map((participante) => (
         <li key={participante}>
-          {participante}
+          <p>{participante}</p>
         </li>
       ))}
     </ul>
