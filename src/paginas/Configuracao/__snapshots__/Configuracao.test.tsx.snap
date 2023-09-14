@@ -26,7 +26,9 @@ exports[`a pagina de confiracao deve ser renderizada corretamente 1`] = `
         </div>
         
       </form>
-      <ul />
+      <ul
+        class="lista"
+      />
       <footer
         class="rodape-configuracoes"
       >

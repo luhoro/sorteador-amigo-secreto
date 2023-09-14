@@ -20,6 +20,7 @@ const Sorteio = () => {
   return (
     <section className="sorteio">
       <h2>Quem vai tirar o papelzinho?</h2>
+
       <form onSubmit={sortear}>
         <select
           required
@@ -29,6 +30,8 @@ const Sorteio = () => {
           value={participanteDaVez}
           onChange={(evento) => setParticipanteDaVez(evento.target.value)}
         >
+          <option>Selecione seu nome</option>
+          
           {participantes.map((participante) => (
             <option key={participante}>{participante}</option>
           ))}
